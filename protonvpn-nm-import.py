@@ -3,9 +3,9 @@
 """ProtonVPN NetworkManager import script.
 
 Usage:
-  nm-import.py [options] <username> <password>
-  nm-import.py [options] --cleanup
-  nm-import.py (-h | --help)
+  protonvpn-nm-import.py [options] <username> <password>
+  protonvpn-nm-import.py [options] --cleanup
+  protonvpn-nm-import.py (-h | --help)
 
 Options:
   -c CONFIG --config=CONFIG     Specify directory containing ProtonVPN config files
