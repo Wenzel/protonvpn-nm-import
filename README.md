@@ -42,6 +42,8 @@ protonvpn-nm-import.py [options] <username> <password>
 
 By default, the script will import **all** the configuration files in `configs` directory (more than `800`).
 
+If a configuration already exists, it removes it before importing the new one.
+
 To import a specific directory, use `--config`:
 
 ~~~
