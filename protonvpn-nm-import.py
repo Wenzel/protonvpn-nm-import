@@ -61,10 +61,10 @@ class ProtonVPNConfigs():
 
     def import_configs(self):
         for config_file in self.walk_configs():
-            con_name = config_file.name
+            con_name = config_file.stem
             if self.nm_exist(con_name):
                 self.nm_delete(con_name)
-            con_name = self.nm_ovpn_import(config_file)
+            self.nm_ovpn_import(config_file)
             self.nm_ovpn_set_credentials(con_name)
 
     def nm_exist(self, con_name):
